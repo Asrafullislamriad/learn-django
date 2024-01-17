@@ -1,7 +1,7 @@
-from django.contrib import admin
-from django.urls import include, path
-
+ 
+from django.urls import   path
+from .views import TodoGetCreate,TodoSerilizer
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("",include("api.urls"))
+   path("",TodoGetCreate.as_view()), 
+   path("<int:pk>",TodoGetCreate.as_view()),
 ]
