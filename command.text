@@ -1,0 +1,5 @@
+create new app ->      python .\manage.py startapp api
+create new project ->  django-admin startproject backend
+migrate project ->     python .\manage.py migrate
+create superuser ->    python .\manage.py createsuperuser
+run server ->          python .\manage.py runserver
