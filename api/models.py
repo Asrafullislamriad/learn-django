@@ -10,4 +10,4 @@ class Todo(models.Model):
     
 
 def __str__(self):
-    return self.title[:20]
+    return self.title
